@@ -335,20 +335,7 @@ export default function Index() {
             «Суши весла», г. Киров, ул. Береговая, д. 5
           </p>
 
-          <div className="animate-fade-up-delay-4 mt-10">
-            <button
-              onClick={() => scrollTo("rsvp")}
-              className="font-body text-sm px-12 py-4 transition-all duration-300 hover:opacity-85"
-              style={{
-                background: "var(--earth)",
-                color: "var(--cream)",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-              }}
-            >
-              Подтвердить приход
-            </button>
-          </div>
+
         </div>
 
         <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2" style={{ opacity: 0.45 }}>
@@ -357,8 +344,65 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ABOUT */}
+      <section id="about" className="py-28 px-6 overflow-hidden">
+        <div className="max-w-2xl mx-auto reveal">
+
+          <div className="flex justify-center mb-10">
+            <PearlNecklace count={7} />
+          </div>
+
+          <p
+            className="font-display text-center italic mb-12"
+            style={{ color: "var(--gold-soft)", fontSize: "0.75rem", letterSpacing: "0.3em", textTransform: "uppercase" }}
+          >
+            о вечере
+          </p>
+
+          <div className="space-y-6 text-center">
+            <p
+              className="font-display font-light italic"
+              style={{ color: "var(--earth)", fontSize: "clamp(1.4rem, 3.5vw, 2rem)", lineHeight: 1.55 }}
+            >
+              Мы решили оставить формальности в прошлом и просто собрать самых близких людей на природе, под открытым небом.
+            </p>
+
+            <div className="flex items-center gap-4 justify-center">
+              <div className="line-organic" />
+              <span className="pearl-lg" />
+              <div className="line-organic" />
+            </div>
+
+            <p
+              className="font-display font-light italic"
+              style={{ color: "var(--earth)", fontSize: "clamp(1.4rem, 3.5vw, 2rem)", lineHeight: 1.55 }}
+            >
+              Это будет день про честность, жемчужные блики заката и танцы до ночи.
+            </p>
+
+            <div className="flex items-center gap-4 justify-center">
+              <div className="line-organic" />
+              <span className="pearl-lg" />
+              <div className="line-organic" />
+            </div>
+
+            <p
+              className="font-display font-semibold"
+              style={{ color: "var(--bark)", fontSize: "clamp(1.5rem, 4vw, 2.2rem)", lineHeight: 1.4, letterSpacing: "-0.01em" }}
+            >
+              Никаких формальностей —<br />
+              только вы, мы и берег реки.
+            </p>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <PearlNecklace count={5} />
+          </div>
+        </div>
+      </section>
+
       {/* WHEN */}
-      <section id="when" className="py-28 px-6">
+      <section id="when" className="py-28 px-6" style={{ background: "rgba(221,208,184,0.14)" }}>
         <div className="max-w-2xl mx-auto text-center reveal">
           <p className="font-body text-xs uppercase mb-4" style={{ color: "var(--gold-soft)", letterSpacing: "0.25em" }}>
             Когда
@@ -370,9 +414,6 @@ export default function Index() {
             Начало в <strong>15:00</strong>
           </p>
           <SectionDivider />
-          <p className="font-body text-sm mb-12" style={{ color: "var(--bark)", opacity: 0.65, lineHeight: 1.8 }}>
-            Просим подтвердить своё присутствие до <strong style={{ opacity: 1 }}>1 июня 2026</strong>
-          </p>
           <CountdownTimer />
         </div>
       </section>
