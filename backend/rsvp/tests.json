@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Missing name returns 400",
+      "method": "POST",
+      "path": "/",
+      "body": {"attending": "yes"},
+      "expectedStatus": 400,
+      "expectedBody": {"error": "Name required"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
