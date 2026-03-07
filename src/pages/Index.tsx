@@ -495,17 +495,22 @@ export default function Index() {
 
           <PearlNecklace count={5} />
 
-          <div className="mt-8 space-y-3">
+          <div className="mt-8 space-y-4">
             <p className="font-body text-sm" style={{ color: "var(--bark)", opacity: 0.65 }}>
               Пишите нам напрямую
             </p>
             <a
-              href="mailto:konevaksenia@mail.ru"
-              className="font-display text-xl italic block transition-opacity hover:opacity-65"
+              href="https://t.me/konevaksu"
+              target="_blank"
+              rel="noreferrer"
+              className="font-display text-2xl italic block transition-opacity hover:opacity-65"
               style={{ color: "var(--earth)" }}
             >
-              konevaksenia@mail.ru
+              @konevaksu
             </a>
+            <p className="font-body text-xs uppercase tracking-widest" style={{ color: "var(--bark)", opacity: 0.45, letterSpacing: "0.18em" }}>
+              Telegram
+            </p>
           </div>
         </div>
       </section>
