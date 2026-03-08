@@ -377,7 +377,7 @@ export default function Index() {
               className="font-display font-light italic"
               style={{ color: "var(--earth)", fontSize: "clamp(1.4rem, 3.5vw, 2rem)", lineHeight: 1.55 }}
             >
-              Это будет день про честность, жемчужные блики заката и танцы до ночи.
+              Это будет день про любовь, честность, жемчужные блики заката и танцы до ночи.
             </p>
 
             <div className="flex items-center gap-4 justify-center">
