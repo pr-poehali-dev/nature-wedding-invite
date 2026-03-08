@@ -364,7 +364,7 @@ export default function Index() {
               className="font-display font-light italic"
               style={{ color: "var(--earth)", fontSize: "clamp(1.4rem, 3.5vw, 2rem)", lineHeight: 1.55 }}
             >
-              Мы решили оставить формальности в прошлом и просто собрать самых близких людей на природе, под открытым небом.
+              Мы решили оставить формальности в прошлом и просто собрать самых близких друзей на природе, под открытым небом.
             </p>
 
             <div className="flex items-center gap-4 justify-center">
